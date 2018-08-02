@@ -25,8 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="getpeb_x64.s">
-      <Filter>Исходные файлы</Filter>
-    </None>
+    <MASM Include="getpeb_x64.s" />
   </ItemGroup>
 </Project>
