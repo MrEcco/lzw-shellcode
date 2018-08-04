@@ -1,3 +1,14 @@
+Using
+======================================
+```C
+size_t (*shc_func)(byte *, size_t, byte *);
+shc_func = (size_t (*)(byte *, size_t, byte *))my_mmap(NULL, sizeof(shellcode), 
+      PROT_EXEC | PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+memcpy(shc_func, shellcode, sizeof(shellcode));
+out_size = shc_func(in, in_size, out);
+my_munmap(shc_func, sizeof(shellcode));
+```
+
 Build guide
 ======================================
 1) Just make
