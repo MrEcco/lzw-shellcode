@@ -27,4 +27,10 @@ For build tool for windows we are use Visual Studio with special settings:<br>
 
 Linux
 ------------------------------------
-Just use makefile
+Just use makefile. It automaticaly detect architecture and compile.
+
+Testing
+====================================
+```bash
+./test.sh
+```
