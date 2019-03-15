@@ -30,3 +30,4 @@ munmap(shc_func, sizeof(shellcode));
 # AV-detection
 Isnt susceptible for static analisis on 04.08.2018.<br>
 Eazy detect any payload after decompress.
+# repa tyt
